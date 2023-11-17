@@ -2,16 +2,12 @@ import { useState } from 'react';
 import Contador from '../Contador/Contador';
 import { Link } from 'react-router-dom';
 import './ItemDetail.css'
-
-//Importamos CarritoContext
 import { CarritoContext } from '../../context/CarritoContext';
-//Importo el Hook useContext: 
 import { useContext } from 'react';
 
 
 
 const ItemDetail = ({ id, nombre, stock, precio, img }) => {
-  //Creamos un estado local con la cantidad de productos agregados. 
     const [agregarCantidad, setAgregarCantidad] = useState(0);
     const {agregarAlCarrito} = useContext(CarritoContext);
 
@@ -32,7 +28,7 @@ const ItemDetail = ({ id, nombre, stock, precio, img }) => {
         <h3>Precio: {precio} </h3>
         <h3>ID: {id} </h3>
         <img src={img} alt={nombre} />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam hic molestiae laudantium non provident maxime magni debitis sapiente! Pariatur illum tempore excepturi asperiores, officiis magnam ex placeat quibusdam necessitatibus?</p>
+        <p>Guitarra de primera calidad, ideal para estudio y concierto. Materiales de primera calidad y lista para su envio inmediato.</p>
 
 
     {
