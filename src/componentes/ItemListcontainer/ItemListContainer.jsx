@@ -23,8 +23,6 @@ const ItemListContainer = () => {
             .catch(error => console.log(error))
     }, [idCategoria])
 
-  
-
     return (
         <>
             <h2 style={{ textAlign: "center" }}>Mis Productos</h2>
