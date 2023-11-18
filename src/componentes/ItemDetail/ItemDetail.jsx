@@ -17,10 +17,9 @@ const ItemDetail = ({ id, nombre, stock, precio, img }) => {
 
 
 
-        const item = {id, nombre, precio};
+        const item = ({id, nombre, precio});
         agregarAlCarrito(item, cantidad);
     }
-
 
     return (
     <div className='contenedorItem'>
